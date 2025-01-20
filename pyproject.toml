@@ -1,7 +1,7 @@
 [project]
 name = "kai"
 authors = [
-    { name = "Kemal Korucu", email = "kemal@korucutech.com"}
+    { name = "Kemal Korucu", email = "kemal@korucutech.com" }
 ]
 description = "KAI"
 requires-python = ">=3.10"
@@ -9,15 +9,15 @@ readme = "README.md"
 dynamic = ["version"]
 dependencies = [
     # "frappe~=15.0.0" # Installed and managed by bench.
-    "ollama~=0.1.8",
-    "distro~=1.9.0",
-    "openai~=1.22.0",
-    "tqdm~=4.66.2",
-    "groq~=0.15.0",
-    "crewai~=0.98.0",
-    "langchain-community~=0.3.14",
-    "langchain-openai~=0.1.0",
-    "langchain-groq~=0.1.0",
+    "ollama>=0.1.8,<0.2.0",
+    "distro>=1.9.0,<2.0.0",
+    "openai>=1.13.3,<2.0.0",
+    "tqdm>=4.64.0,<5.0.0",
+    "groq>=0.15.0,<0.16.0",
+    "crewai>=0.98.0,<0.99.0",
+    "langchain-community>=0.3.0,<0.4.0",
+    "langchain-groq>=0.2.0,<0.3.0",
+    "langchain-core>=0.2.0,<0.4.0",
 ]
 
 [build-system]
@@ -27,5 +27,5 @@ build-backend = "flit_core.buildapi"
 # These dependencies are only installed when developer mode is enabled
 [tool.bench.dev-dependencies]
 # package_name = "~=1.1.0"
-ollama = "~=0.1.8"
-distro = "~=1.9.0" 
+ollama = ">=0.1.8,<0.2.0"
+distro = ">=1.9.0,<2.0.0"
